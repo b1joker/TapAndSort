@@ -12,7 +12,7 @@
 @interface ViewController ()
 {
     NSArray *photo,*photoOnScreen;
-    SystemSoundID soundID;
+    SystemSoundID soundID,sortSound;
     __weak IBOutlet UIButton *trashButton;
     __weak IBOutlet UIButton *sortButton;
     UIImageView *aPhoto;
@@ -38,8 +38,10 @@
              [UIImage imageNamed:@"8.png"],nil];
     
     NSURL *soundX = [NSURL fileURLWithPath:[[NSBundle mainBundle]	pathForResource:@"trash" ofType:@"wav"]];
-    
     AudioServicesCreateSystemSoundID((__bridge  CFURLRef) soundX, 	&soundID);
+    NSURL *soundY = [NSURL fileURLWithPath:[[NSBundle mainBundle]	pathForResource:@"sortSound" ofType:@"wav"]];
+    AudioServicesCreateSystemSoundID((__bridge  CFURLRef) soundY, 	&sortSound);
+
     
     UITapGestureRecognizer* tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                                            action:@selector(onTap:)];
@@ -91,7 +93,8 @@
     y2 = y1;
     
     count = 1;
-    
+    AudioServicesPlaySystemSound(sortSound);
+
     for(UIView *view in self.view.subviews)
     {
         

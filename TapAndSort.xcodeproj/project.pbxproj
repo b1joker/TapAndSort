@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33135932197E5CCC00C2BB06 /* sortSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33135931197E5CCC00C2BB06 /* sortSound.wav */; };
 		33163976197BBCCD005EC8A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33163975197BBCCD005EC8A8 /* Foundation.framework */; };
 		33163978197BBCCD005EC8A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33163977197BBCCD005EC8A8 /* CoreGraphics.framework */; };
 		3316397A197BBCCD005EC8A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33163979197BBCCD005EC8A8 /* UIKit.framework */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33135931197E5CCC00C2BB06 /* sortSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sortSound.wav; sourceTree = "<group>"; };
 		33163972197BBCCD005EC8A8 /* TapAndSort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapAndSort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33163975197BBCCD005EC8A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		33163977197BBCCD005EC8A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -186,6 +188,7 @@
 				331639D4197BE321005EC8A8 /* 2.png */,
 				331639D5197BE321005EC8A8 /* 3.png */,
 				331639D6197BE321005EC8A8 /* 4.png */,
+				33135931197E5CCC00C2BB06 /* sortSound.wav */,
 				331639E8197BE927005EC8A8 /* trash.wav */,
 				331639D7197BE321005EC8A8 /* 5.png */,
 				331639D8197BE321005EC8A8 /* 6.png */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				331639E2197BE321005EC8A8 /* 8.png in Resources */,
+				33135932197E5CCC00C2BB06 /* sortSound.wav in Resources */,
 				3316398E197BBCCD005EC8A8 /* Images.xcassets in Resources */,
 				331639EB197BEBA7005EC8A8 /* trash.png in Resources */,
 				331639DE197BE321005EC8A8 /* 4.png in Resources */,
@@ -512,6 +516,7 @@
 				331639A6197BBCCE005EC8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		331639A7197BBCCE005EC8A8 /* Build configuration list for PBXNativeTarget "TapAndSortTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				331639A9197BBCCE005EC8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
